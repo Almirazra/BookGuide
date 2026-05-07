@@ -1,0 +1,98 @@
+.profile-page {
+  min-height: 100vh;
+  padding-bottom: 64px;
+}
+
+.profile-header {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.profile-header h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(32px, 4vw, 48px);
+  margin-bottom: 16px;
+  color: var(--vintage-ink);
+}
+
+.profile-header p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--vintage-muted);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+  border-radius: var(--radius-md);
+  background: var(--vintage-paper);
+  border: 1px solid rgba(63, 45, 34, 0.18);
+  box-shadow: var(--vintage-shadow-soft);
+  margin-bottom: 32px;
+}
+
+.profile-photo-wrapper {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(125, 47, 53, 0.18);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-info h2 {
+  margin: 0 0 8px;
+  color: var(--vintage-ink);
+}
+
+.profile-role {
+  margin: 0 0 16px;
+  color: var(--vintage-burgundy);
+  font-weight: 700;
+}
+
+.profile-details {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background: rgba(244, 234, 215, 0.6);
+  border: 1px solid rgba(63, 45, 34, 0.14);
+}
+
+.profile-details h3 {
+  margin-bottom: 16px;
+  color: var(--vintage-ink);
+}
+
+.profile-details ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--vintage-ink);
+  line-height: 1.8;
+}
+
+.profile-details li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-card .profile-info {
+    width: 100%;
+  }
+}

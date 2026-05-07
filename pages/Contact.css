@@ -1,0 +1,83 @@
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 72px 24px 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 10px),
+    var(--vintage-espresso);
+}
+
+.contact-title {
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 28px;
+  color: var(--vintage-paper);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(34px, 5vw, 52px);
+  font-weight: 800;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 650px;
+  overflow: hidden;
+  background: var(--vintage-paper);
+  border: 1px solid rgba(63, 45, 34, 0.22);
+  border-radius: var(--radius-md);
+  box-shadow: var(--vintage-shadow);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 23px 28px;
+  border-bottom: 1px dashed rgba(63, 45, 34, 0.22);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item:hover {
+  background: #fff5df;
+}
+
+.contact-item__icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--vintage-paper);
+  background: var(--vintage-burgundy);
+  border-radius: var(--radius-sm);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+  font-size: 1.7rem;
+}
+
+.contact-item__label {
+  margin-bottom: 4px;
+  color: var(--vintage-teal);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-item__value {
+  margin: 0;
+  color: var(--vintage-ink);
+  font-size: 1.04rem;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .contact-item {
+    padding: 20px;
+  }
+}
